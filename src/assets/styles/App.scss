@@ -1,5 +1,8 @@
+@import "./Vars.scss";
+
 body {
-  margin: 0;
-  padding: 0;
-  background-color: red;
+  margin: 0px;
+  background: linear-gradient(#01295F, #437F97);
+  font-family: "Muli", sans-serif;
+  width: 99vw;
 }
