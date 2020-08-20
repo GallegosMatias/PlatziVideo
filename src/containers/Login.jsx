@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../assets/styles/components/Login.scss';
 import g from '../assets/static/g.png';
 import tw from '../assets/static/tw.png';
@@ -24,7 +25,11 @@ const Login = () => (
         <div><img src={tw} alt="Twitter"/>Iniciar sesión con Twitter</div>
       </section>
 
-      <p className="login__container--register">¿Aún no estás registrado? <a href="/register">Registrate</a></p>
+      <p className="login__container--register">¿Aún no estás registrado?
+        <Link to="/register">
+          Registrate
+        </Link>
+      </p>
     </div>
   </section>
 
