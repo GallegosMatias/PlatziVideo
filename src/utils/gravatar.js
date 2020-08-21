@@ -1,8 +1,10 @@
 import md5 from 'md5';
 
-const gravatar = () => {
+const gravatar = (email) => {
   const base = 'https://gravatar.com/avatar/';
-  const formatteEmail = (email).trim().toLowerCase();
-  const hash = md5(formatteEmail, { enconding: "binary" });
-  return `${base}${hash}`;
-}
+  const formattedEmail = (email).trim().toLowerCase();
+  const hash = md5(formattedEmail, { enconding: "binary" });
+  return `${base}${hash}?d=identicon`
+};
+
+export default gravatar;
